@@ -17,11 +17,11 @@ def main():
 					client_id=SPOTIPY_CLIENT_ID,
 					client_secret=SPOTIPY_CLIENT_SECRET,
 					redirect_uri=SPOTIPY_REDIRECT_URI))
+                                        # open_browser=False))
 
     #infinite loop
     while True:
         #get the currently playing track item
-        print("getting track...")
         track = sp.current_user_playing_track()
         if not track == None:
 	    # extract track name from item
