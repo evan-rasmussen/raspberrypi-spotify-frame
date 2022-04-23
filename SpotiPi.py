@@ -42,7 +42,7 @@ def main():
                 artists_str += artists[i] + ", "
             artists_str += artists[len(artists)-1] # append last artist without comma
 
-            print(f"{track_name}/n{artists_str}/n{release_date}")
+            print(f"{track_name}\n{artists_str}\n{release_date}")
             # gets the 64x64 album art URL
             img_url = track['item']['album']['images'][2]['url']
             # get the actual image
